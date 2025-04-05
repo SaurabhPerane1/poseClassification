@@ -1,2 +1,5 @@
 opencv-python-headless
 tensorflow
+streamlit_webrtc
+webrtc_streamer
+VideoProcessorBase
