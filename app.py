@@ -24,9 +24,9 @@ camera = cv2.VideoCapture(0)
 
 while run:
     ret, frame = camera.read()
-    if not ret:
-        st.write("Failed to grab frame")
-        break
+    # if not ret:
+    #     st.write("Failed to grab frame")
+    #     break
     frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     input_img = preprocess_frame(frame_rgb)
     prediction = model.predict(input_img)
