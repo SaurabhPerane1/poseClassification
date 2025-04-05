@@ -4,7 +4,7 @@ import numpy as np
 import tensorflow as tf
 from PIL import Image
 
-model = tf.keras.models.load_model("C:\\\\Users\\\\Lenovo\\\\Desktop\\\\ProjectFinalDraftClassification\\\\yoga_pose_classifier1.keras")
+model = tf.keras.models.load_model("yoga_pose_classifier1.keras")
 
 pose_classes = ['Downdog','Goddess','Plank', 'Tree', 'Warrior2']
 
