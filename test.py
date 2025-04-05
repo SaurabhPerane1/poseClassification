@@ -21,4 +21,4 @@ def video_frame_callback(frame):
         print("Error in frame processing: ", e)
         return None
 
-webrtc_streamer(key="example", video_frame_callback=video_frame_callback)
+webrtc_streamer(key="example", video_frame_callback=video_frame_callback, media_stream_constraints={"video":True, "audio":False})
